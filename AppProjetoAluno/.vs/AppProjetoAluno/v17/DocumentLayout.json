@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2022202060041\\Documents\\GitHub\\Programacao_visual2\\AppProjetoAluno\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D14830AE-A28F-48F6-AE4E-1A7120CA0863}|AppProjetoAluno\\AppProjetoAluno.csproj|c:\\users\\2022202060041\\documents\\github\\programacao_visual2\\appprojetoaluno\\appprojetoaluno\\components\\pages\\cadastro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D14830AE-A28F-48F6-AE4E-1A7120CA0863}|AppProjetoAluno\\AppProjetoAluno.csproj|solutionrelative:appprojetoaluno\\components\\pages\\cadastro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D14830AE-A28F-48F6-AE4E-1A7120CA0863}|AppProjetoAluno\\AppProjetoAluno.csproj|c:\\users\\2022202060041\\documents\\github\\programacao_visual2\\appprojetoaluno\\appprojetoaluno\\models\\calcularnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D14830AE-A28F-48F6-AE4E-1A7120CA0863}|AppProjetoAluno\\AppProjetoAluno.csproj|solutionrelative:appprojetoaluno\\models\\calcularnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalcularNotas.cs",
+              "DocumentMoniker": "C:\\Users\\2022202060041\\Documents\\GitHub\\Programacao_visual2\\AppProjetoAluno\\AppProjetoAluno\\Models\\CalcularNotas.cs",
+              "RelativeDocumentMoniker": "AppProjetoAluno\\Models\\CalcularNotas.cs",
+              "ToolTip": "C:\\Users\\2022202060041\\Documents\\GitHub\\Programacao_visual2\\AppProjetoAluno\\AppProjetoAluno\\Models\\CalcularNotas.cs",
+              "RelativeToolTip": "AppProjetoAluno\\Models\\CalcularNotas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T01:07:30.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cadastro.razor",
+              "DocumentMoniker": "C:\\Users\\2022202060041\\Documents\\GitHub\\Programacao_visual2\\AppProjetoAluno\\AppProjetoAluno\\Components\\Pages\\Cadastro.razor",
+              "RelativeDocumentMoniker": "AppProjetoAluno\\Components\\Pages\\Cadastro.razor",
+              "ToolTip": "C:\\Users\\2022202060041\\Documents\\GitHub\\Programacao_visual2\\AppProjetoAluno\\AppProjetoAluno\\Components\\Pages\\Cadastro.razor",
+              "RelativeToolTip": "AppProjetoAluno\\Components\\Pages\\Cadastro.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-02T01:04:21.653Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

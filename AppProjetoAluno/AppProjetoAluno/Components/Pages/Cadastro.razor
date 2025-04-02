@@ -1,0 +1,69 @@
+﻿@page "/cadastro"
+@using AppProjetoAluno.Models
+@rendermode InteractiveServer
+
+<div class="container">
+    <h3><center>SIMULADOR DE NOTAS</center></h3>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">NOME:</label>
+        <input @bind="Aluno.Nome" type="text" class="form-control" id="exampleFormControlInput1">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">NOTA 1:</label>
+        <input @bind="Aluno.Nota1" type="number" class="form-control" id="exampleFormControlInput1">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">NOTA 2 :</label>
+        <input @bind="Aluno.Nota2" type="number" class="form-control" id="exampleFormControlInput1">
+    </div>
+
+    <button type="button" class="btn btn-primary"@onclick=CalcularMedia>CALCULAR</button>
+    <button type="button" class="btn btn-warning">CANCELAR</button>
+    <button type="button" class="btn btn-success">SALVAR</button>
+
+    <nav class="navbar navbar-light" style="background-color: white"></nav>
+
+    <nav class="navbar navbar-light" style="background-color: darkgreen"></nav>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">NOME</th>
+                <th scope="col">NOTA 1</th>
+                <th scope="col">NOTA 2</th>
+                <th scope="col">MÉDIA</th>
+                <th scope="col">SITUAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Alunos_lista)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Nota1</td>
+                    <td>@item.Nota2</td>
+                    <td>@item.Media</td>
+                    <td>@item.Situacao()</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+@code {
+    CalcularNotas Aluno = new CalcularNotas();
+    List<CalcularNotas> Alunos_lista = new List<CalcularNotas>();
+    double? Resultado_media = null;
+
+    private void CalcularMedia()
+    {
+        Resultado_media = Aluno.CalcularMedia();
+    }
+   
+}
+
