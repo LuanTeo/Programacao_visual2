@@ -1,0 +1,38 @@
+﻿@page "/consulta"
+@using AppInventario.Models;
+@using AppInventario.Services;
+@inject PessoaService pessoaService;
+@inject NavigationContext navegacao;
+
+@code {
+    private string? Descricao { get; set; }
+    private double? Valor { get; set; }
+    private bool novo = false;
+    private bool campoBloqueado = false;
+    private Pessoa? pessoa = new Pessoa();
+    private List<Propriedade> bensRegistrado = new List<Propriedade>();
+    private List<Pessoa> Pessoas { get; set;}
+
+    protected override async Task OnInitializedAsync()
+    {
+        Pessoas = new List<Pessoa>();
+        var lista = await pessoaService?.Pessoas(); // buscando no banco
+        Pessoas = lista.ToList(); // lista de pessoas carregadas
+    }
+    public void SelecionarPessoas(ChangeEventArgs e)
+    {
+        string cpf = e.Value.ToString();
+        var p = Pessoas.Where(p => p.Cpf == cpf).FirstOrDefault();
+        if (p != null)
+        {
+            pessoa = p;
+            bensRegistrado = pessoa.Propriedade;
+        }
+
+    }
+    public async Task<List<Pessoa>>?Pessoas()
+    {
+        var pessoas = await _context.Pessoas.include(p => p.Propriedade).ToListAsync();
+        return pessoas;
+    }
+}
